@@ -1,0 +1,20 @@
+{
+  "app": "com.lgeha.nuts",
+  "duration": "3006ms",
+  "headers": {
+    "User-Agent": "FBAndroidSDK.16.1.3",
+    "Accept-Language": "pt_BR",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Content-Encoding": "gzip",
+    "Host": "graph.facebook.com",
+    "Connection": "Keep-Alive",
+    "Accept-Encoding": "gzip"
+  },
+  "method": "GET",
+  "protocol": "HTTP/1.1",
+  "remoteIp": "31.13.90.23",
+  "remotePort": 443,
+  "sessionId": "b1223334-22df-4915-846a-6352eb0ade16",
+  "time": "2023-08-28 09:07:15",
+  "url": "https://graph.facebook.com/v16.0/app/mobile_sdk_gk?access_token\u003d942637515795204%7Cc842b117b05a923903fb441fdeb77838\u0026fields\u003dgatekeepers\u0026format\u003djson\u0026sdk_version\u003d16.1.3\u0026sdk\u003dandroid\u0026platform\u003dandroid"
+}

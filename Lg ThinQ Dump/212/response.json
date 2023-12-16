@@ -1,0 +1,33 @@
+{
+  "app": "com.lgeha.nuts",
+  "code": 200,
+  "duration": "3006ms",
+  "headers": {
+    "Content-Encoding": "gzip",
+    "ETag": "\"14ac2d926548ca7d78f02c1a96399510128a196b\"",
+    "Content-Type": "text/javascript; charset\u003dUTF-8",
+    "Vary": "Accept-Encoding",
+    "cross-origin-resource-policy": "cross-origin",
+    "x-app-usage": "{\"call_count\":0,\"total_cputime\":0,\"total_time\":0}",
+    "Access-Control-Allow-Origin": "*",
+    "facebook-api-version": "v16.0",
+    "Strict-Transport-Security": "max-age\u003d15552000; preload",
+    "Pragma": "no-cache",
+    "Cache-Control": "private, no-cache, no-store, must-revalidate",
+    "Expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+    "x-fb-request-id": "AffEoK6kbdRPiFSGKfu9wqm",
+    "x-fb-trace-id": "EuNJ/bwANSi",
+    "x-fb-rev": "1008295794",
+    "X-FB-Debug": "bEqqAK1fpKLWDDEwKkiH9woJxZUkiNhq6jv76EjZb7WK+DMQQgHEgTWpHj3pGT+ZmaOLiQ+m6JhyLtoJ3Pgjcg\u003d\u003d",
+    "Date": "Mon, 28 Aug 2023 12:07:18 GMT",
+    "Alt-Svc": "h3\u003d\":443\"; ma\u003d86400",
+    "Connection": "keep-alive",
+    "Content-Length": "565"
+  },
+  "message": "OK",
+  "protocol": "HTTP/1.1",
+  "remoteIp": "31.13.90.23",
+  "remotePort": 443,
+  "sessionId": "b1223334-22df-4915-846a-6352eb0ade16",
+  "time": "2023-08-28 09:07:15"
+}

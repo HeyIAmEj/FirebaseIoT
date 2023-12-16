@@ -1,0 +1,9 @@
+GET /v16.0/app?access_token=942637515795204%7Cc842b117b05a923903fb441fdeb77838&fields=supports_implicit_sdk_logging%2Cgdpv4_nux_content%2Cgdpv4_nux_enabled%2Candroid_dialog_configs%2Candroid_sdk_error_categories%2Capp_events_session_timeout%2Capp_events_feature_bitmask%2Cauto_event_mapping_android%2Cseamless_login%2Csmart_login_bookmark_icon_url%2Csmart_login_menu_icon_url%2Crestrictive_data_filter_params%2Caam_rules%2Csuggested_events_setting%2Cprotected_mode_rules&format=json&sdk=android HTTP/1.1
+User-Agent: FBAndroidSDK.16.1.3
+Accept-Language: pt_BR
+Content-Type: application/x-www-form-urlencoded
+Content-Encoding: gzip
+Host: graph.facebook.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
