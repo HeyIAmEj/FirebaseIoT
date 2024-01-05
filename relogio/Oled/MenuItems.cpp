@@ -3,17 +3,14 @@
 
 int contentStartAt = 15;
 
-void MenuItems::drawFrame1(OLEDDisplay* display, OLEDDisplayUiState* state, int16_t x, int16_t y)
+void MenuItems::wifiFrame(OLEDDisplay* display, OLEDDisplayUiState* state, int16_t x, int16_t y)
 {
-  display->drawXbm(x + 35, y + contentStartAt, WiFi_Logo_width, WiFi_Logo_height, WiFi_Logo_bits);
+  display->drawXbm(x + 35, y + contentStartAt, wifi_width, wifi_height, WiFi_Logo_bits);
 }
 
 void MenuItems::drawFrame2(OLEDDisplay* display, OLEDDisplayUiState* state, int16_t x, int16_t y)
 {
-  display->setTextAlignment(TEXT_ALIGN_LEFT);
-  display->drawString(0 + x, y + contentStartAt, "Olá, tudo bem?");
-  display->drawString(0 + x, y + contentStartAt * 2, "Isso é um teste!");
-  display->drawString(0 + x, y + contentStartAt * 3, "Acredito que funcionou!");
+  display->drawXbm(x + 35, y + contentStartAt, emoticon_width, emoticon_height, emoticon_triste);
 }
 
 void MenuItems::drawFrame3(OLEDDisplay* display, OLEDDisplayUiState* state, int16_t x, int16_t y)

@@ -9,7 +9,7 @@ OLEDDisplayUi ui(&display);
 #include "FrameCRUD.h"
 #include "MenuItems.h"
 
-FrameCallback frames[] = {MenuItems::drawFrame1, MenuItems::drawFrame2, MenuItems::drawFrame3, MenuItems::drawFrame4, MenuItems::drawFrame5};
+FrameCallback frames[] = {MenuItems::wifiFrame, MenuItems::drawFrame2, MenuItems::drawFrame3, MenuItems::drawFrame4, MenuItems::drawFrame5};
 int frameCount = sizeof(frames) / sizeof(frames[0]);
 
 OverlayCallback overlays[] = {MenuItems::topBar};
@@ -20,15 +20,14 @@ const int bt_out2 =  12;
 const int bt_out3 =  13;
 const int bt_out4 =  15;
 
+bool displayState = false;
+
+
 void setup()
 {
   Serial.begin(115200);
   setupPinMode();
   setupTransitionInfo();
-
-
-  // frameCrud.addFrame(MenuItems::clockOverlay);
-  // display.display();
 }
 
 void setupPinMode(){
@@ -39,9 +38,6 @@ void setupPinMode(){
 }
 void setupTransitionInfo()
 {
-  // The ESP is capable of rendering 60fps in 80Mhz mode
-  // but that won't give you much time for anything else
-  // run it in 160Mhz mode or just set it to 30 fps
   ui.setTargetFPS(60);
   ui.setActiveSymbol(activeSymbol);
   ui.setInactiveSymbol(inactiveSymbol);
@@ -55,6 +51,7 @@ void setupTransitionInfo()
 
   ui.init();
   display.flipScreenVertically();
+  displayState = true;
 
   // unsigned long secsSinceStart = millis();
   // // Unix time starts on Jan 1 1970. In seconds, that's 2208988800:
@@ -89,21 +86,28 @@ void setupButtons(){
       select(4);
   }
 
-  delay(1000);
+  delay(100);
 }
 
 void select(int number){
   switch (number) {
-  case 1:
-  Serial.println("acendeu 1");
-  ui.previousFrame();
-  break;
-  case 2:
-  break;
-  case 3:
-  break;
-  case 4:
-  ui.switchToFrame(3);
-  break;
+    case 1:
+      if(displayState){
+        display.displayOff();
+      }else{
+        display.displayOn();
+      }
+      displayState = !displayState;
+      break;
+    case 2:
+      break;
+    case 3:
+      ui.previousFrame();
+      break;
+    case 4:
+      ui.nextFrame();
+      break;
+    default:
+      break;
   }
 }

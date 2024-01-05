@@ -6,7 +6,7 @@
 class MenuItems
 {
 public:
-  static void drawFrame1(OLEDDisplay* display, OLEDDisplayUiState* state, int16_t x, int16_t y);
+  static void wifiFrame(OLEDDisplay* display, OLEDDisplayUiState* state, int16_t x, int16_t y);
   static void drawFrame2(OLEDDisplay* display, OLEDDisplayUiState* state, int16_t x, int16_t y);
   static void drawFrame3(OLEDDisplay* display, OLEDDisplayUiState* state, int16_t x, int16_t y);
   static void drawFrame4(OLEDDisplay* display, OLEDDisplayUiState* state, int16_t x, int16_t y);
